@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "I3xcpDTG7K4ewL1LTGIg5teTnqDJC3DYX8uXFNQgH2F3e6PtAW1wzgQ/tovu5fQg5h6QmeCZt14rYq1XZXfraQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ladyr\\Documents\\mistic2021\\hackatoon\\Emigrant.App\\Emigrant.App.Servicio\\Emigrant.App.Servicio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ladyr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ladyr\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ladyr\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\ladyr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\ladyr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\ladyr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
