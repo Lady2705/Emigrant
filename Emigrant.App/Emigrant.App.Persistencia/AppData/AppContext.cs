@@ -8,8 +8,8 @@ namespace Emigrant.App.Persistencia.AppData
 
     public class AppContext: DbContext
     {
-        public Dbset<Migrante> migrante {get;set;}
-        public Dbset<Entidad> entidad {get;set;}
+        public DbSet<Migrante> migrante {get;set;}
+        public DbSet<Entidad> entidad {get;set;}
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

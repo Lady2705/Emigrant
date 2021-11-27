@@ -2,14 +2,14 @@ using Emigrant.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Emigrant.App.Persistencia.AppRepositorio
+namespace Emigrant.App.Persistencia.AppRepositorios
 {
     public class repositorioMigrante: iRepositorioMigrante
     {
-        bool valorRetorno=false;
+        //bool valorRetorno=false;
         //Ingresar informacion 
 
-        public Migrante AddMigrant(Migrante migrante)
+        Migrante iRepositorioMigrante.AddMigrant(Migrante migrante)
         { 
           //Abriendo y Liebrando Recursos
           using(AppData.AppContext contexto = new AppData.AppContext())
@@ -22,7 +22,7 @@ namespace Emigrant.App.Persistencia.AppRepositorio
         }
             //Borrar Medico
 
-        public bool DeletMigrat(int IdMigrante)
+        bool iRepositorioMigrante.DeletMigrant(int IdMigrante)
         {
          using(AppData.AppContext contexto = new AppData.AppContext()) 
           {    
@@ -31,17 +31,21 @@ namespace Emigrant.App.Persistencia.AppRepositorio
             {
              contexto.Remove(BusquedaMigrante);
              contexto.SaveChanges();
-             valorRetorno=true; 
+             return true; 
 
+            }else
+            {
+              return false;      
             }
-            return valorRetorno;
+            
           }   
          
         }
         
         
         
-        public Migrante ActualizarMigrant(Migrante migrante)
+    
+        Migrante iRepositorioMigrante.ActualizarMigrant(Migrante migrante)
         {
             
             using(AppData.AppContext contexto = new AppData.AppContext())
@@ -51,9 +55,9 @@ namespace Emigrant.App.Persistencia.AppRepositorio
                 { 
                     BusquedaMigrante.Nombre=migrante.Nombre;
                     BusquedaMigrante.Apellido=migrante.Apellido;
-                    BusquedaMigrante.Direccion=medicos.Direccion;
-                    BusquedaMigrante.Telefono=medicos.Telefono;
-                    BusquedaMigrante.contrasena=migrante.Contrasena;
+                    BusquedaMigrante.Direccion=migrante.Direccion;
+                    BusquedaMigrante.Telefono=migrante.Telefono;
+                    BusquedaMigrante.Contrasena=migrante.Contrasena;
                     contexto.SaveChanges();
                     
                  }
@@ -65,7 +69,7 @@ namespace Emigrant.App.Persistencia.AppRepositorio
 
         //Consultar Medico (lista)
 
-        public IEnumerable<Migrante> ConsultarMigrante()
+         IEnumerable<Migrante> iRepositorioMigrante.ConsultarMigrante()
         {
             //Var Listas Medicos
           
@@ -80,22 +84,16 @@ namespace Emigrant.App.Persistencia.AppRepositorio
              }
          
         }
-        //Consultar medico
-
-        public Migrante ConsultarMigrante(int IdMigrante)
-        { 
         
-            using(AppData.AppContext contexto = new AppData.AppContext())
-            {
-              var ListaMigrante=(from p in contexto.migrante where p.IdMigrante==IdMigrante select p).First();
-              return ListaMigrante;
-              
-             }
-         }
 
-         public Migrante BuscarMigrantePorId(int IdMigrante){
+     
+
+          public Migrante ConsultarMigrantId(int IdMigrante){
            using (AppData.AppContext contexto = new AppData.AppContext())
-           return contexto.migrate.SingleOrDefault(s=>s.IdMigrante==IdMigrante);
+            //var migranteEncontrado = contexto.migrante.FirstOrDefault(s=>s.IdMigrante==IdMigrante);
+            //return migranteEncontrado;
+           
+            return contexto.migrante.SingleOrDefault(s=>s.IdMigrante==IdMigrante);
          }
 
     }   

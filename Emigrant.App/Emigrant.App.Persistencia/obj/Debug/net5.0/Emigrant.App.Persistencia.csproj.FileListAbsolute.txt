@@ -13,3 +13,6 @@ C:\Users\ladyr\Documents\mistic2021\hackatoon\Emigrant.App\Emigrant.App.Persiste
 C:\Users\ladyr\Documents\mistic2021\hackatoon\Emigrant.App\Emigrant.App.Persistencia\obj\Debug\net5.0\ref\Emigrant.App.Persistencia.dll
 C:\Users\ladyr\Documents\mistic2021\hackatoon\Emigrant.App\Emigrant.App.Persistencia\obj\Debug\net5.0\Emigrant.App.Persistencia.pdb
 C:\Users\ladyr\Documents\mistic2021\hackatoon\Emigrant.App\Emigrant.App.Persistencia\obj\Debug\net5.0\Emigrant.App.Persistencia.genruntimeconfig.cache
+C:\Users\ladyr\Documents\mistic2021\hackatoon\Emigrant.App\Emigrant.App.Persistencia\bin\Debug\net5.0\Emigrant.App.Dominio.dll
+C:\Users\ladyr\Documents\mistic2021\hackatoon\Emigrant.App\Emigrant.App.Persistencia\bin\Debug\net5.0\Emigrant.App.Dominio.pdb
+C:\Users\ladyr\Documents\mistic2021\hackatoon\Emigrant.App\Emigrant.App.Persistencia\obj\Debug\net5.0\Emigrant.App.Persistencia.csproj.CopyComplete

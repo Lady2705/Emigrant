@@ -5,10 +5,10 @@ namespace Emigrant.App.Persistencia.AppRepositorios
 {
     public interface iRepositorioMigrante
     {
-        bool Addmigrant(Migrante migrante);
-        bool DeletMigrant(int Nit);
-        bool ActualizarMigrant(Migrante migrante);
+        Migrante AddMigrant(Migrante migrante);
+        bool DeletMigrant(int IdMigrante);
+        Migrante ActualizarMigrant(Migrante migrante);
         IEnumerable<Migrante> ConsultarMigrante();
-        Migrante ConsultarMigrant(int Nit);  
+        Migrante ConsultarMigrantId(int IdMigrante);  
     }
 }

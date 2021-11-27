@@ -23,7 +23,7 @@ namespace Emigrant.App.Dominio
         [ForeignKey("IdEntidad")]
         public virtual Entidad Entidad { get; set; }
 
-         public Migrante(int Id, string Nombre, string Apellido, string Direccion, string Telefono, int idMigrante, string Contrasena):base(Id,  Nombre, Apellido, Direccion, Telefono, Contrasena)
+         public Migrante(int Id, string Nombre, string Apellido, string Direccion, string Telefono, string Contrasena,int idMigrante):base(Id,  Nombre, Apellido, Direccion, Telefono, Contrasena)
         {
             this.IdMigrante = idMigrante;
             

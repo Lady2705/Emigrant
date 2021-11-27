@@ -2,7 +2,7 @@ using Emigrant.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Emigrant.App.Persistencia.AppRepositorio
+namespace Emigrant.App.Persistencia.AppRepositorios
 {
     public class repositorioEntidad : irepositorioEntidad
     {
@@ -54,7 +54,7 @@ namespace Emigrant.App.Persistencia.AppRepositorio
             
             using(AppData.AppContext contexto = new AppData.AppContext())
             {
-                var BusquedaEntidad= contexto.empresa.SingleOrDefault(o=>o.Nit==entidad.Nit);
+                var BusquedaEntidad= contexto.entidad.SingleOrDefault(o=>o.Nit==entidad.Nit);
                 if(!(BusquedaEntidad==null))
                 { 
                     BusquedaEntidad.RazonSocial=entidad.RazonSocial;
